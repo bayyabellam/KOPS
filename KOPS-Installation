@@ -1,4 +1,4 @@
-dineshdevops.online
+bayyareddybellam.shop
 
 mkdir .aws && cd .aws/
 cat <<EOF > credentials
@@ -33,9 +33,9 @@ Download the latest version of kubectl using the below url
 chmod +x kubectl
 kubectl version
 
-kops create cluster --name=dineshdevops.online --state=s3://dineshdevops.online --zones=us-east-1a --node-count=2 --node-size=t3.medium --master-size=t3.medium --master-volume-size 20 --node-volume-size 10 --dns-zone=dineshdevops.online --yes
-kops validate cluster --name=dineshdevops.online --state=s3://dineshdevops.online
-kops delete cluster --name dineshdevops.online --state s3://dineshdevops.online  --yes
+kops create cluster --name=bayyareddybellam.shop --state=s3://bayyareddybellam.shop --zones=us-east-1a --node-count=2 --node-size=t3.medium --master-size=t3.medium --master-volume-size 20 --node-volume-size 10 --dns-zone=bayyareddybellam.shop --yes
+kops validate cluster --name=bayyareddybellam.shop --state=s3://bayyareddybellam.shop
+kops delete cluster --name bayyareddybellam.shop --state s3://bayyareddybellam.shop  --yes
 
 6. Scaling Your Cluster
 If you want to scale your worker nodes, you can edit the cluster configuration:
